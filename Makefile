@@ -1,3 +1,4 @@
+# maxdepth limit the recursive search depth in your folder
 SASSFILES = $(shell find ./ -maxdepth 50 -type f -name '*.sass')
 SCSSFILES = $(shell find ./ -maxdepth 50 -type f -name '*.scss')
 SCSSES = $(SCSSFILES:.scss=.css) $(SASSFILES:.sass=.css)
